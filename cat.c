@@ -14,7 +14,7 @@ cat(int fd)
       printf(1, "cat: write error\n");
       exit();
     }
-  }
+ }
   if(n < 0){
     printf(1, "cat: read error\n");
     exit();
@@ -25,7 +25,6 @@ int
 main(int argc, char *argv[])
 {
   int fd, i;
-
   if(argc <= 1){
     cat(0);
     exit();
